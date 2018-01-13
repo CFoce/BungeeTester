@@ -1,0 +1,8 @@
+name: Tester
+main: com.akaiha.tester.Tester
+version: 0.2.5
+author: Akaiha
+
+commands:
+  test:
+    description: Test command

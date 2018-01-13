@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+version = '0.3.1'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+def bungeeVersion = '1.12-SNAPSHOT'
+
+repositories {
+    jcenter()
+    maven {
+    	url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+}
+
+dependencies {
+    compile (group: 'net.md-5', name: 'bungeecord-api', version: bungeeVersion)
+}
+
+jar {
+    baseName 'Tester'
+}
